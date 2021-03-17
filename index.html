@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geolocation</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body>
+    <nav>
+      <p>
+        <label for="zoom">Zoom Level</label>
+        <select id="zoom">
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10" selected>10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+        </select>
+      </p>
+      <p>
+        <label for="pitch">View Angle</label>
+        <select id="pitch">
+          <option value="15">15</option>
+          <option value="30">30</option>
+          <option value="45">45</option>
+          <option value="60" selected>60</option>
+        </select>
+      </p>
+      <p>
+        <label for="style">Map Style</label>
+        <select id="style">
+          <option value="streets-v11" selected>Streets</option>
+          <option value="outdoors-v11">Outdoors</option>
+          <option value="light-v10">Light</option>
+          <option value="dark-v10">Dark</option>
+          <option value="satellite-v9">Satellite</option>
+        </select>
+      </p>
+    </nav>
+    <main>
+      <!-- image will load here -->
+      <img src="" id="map" alt="" />
+    </main>
+    <section class="overlay">
+      <div class="modal">
+        <!-- TODO: 
+          finish the HTML and CSS for this modal and overlay,
+          so you can display messages from the script
+        -->
+      </div>
+    </section>
+  </body>
+</html>
